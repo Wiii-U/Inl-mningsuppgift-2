@@ -11,19 +11,18 @@
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-color: black;
-    background-image: url("background-image.avif"),url("Stormveil.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: top,bottom;
   }
   
-  img.top-image {
-    width: 100%;
+  img.top-bg-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
 
-  img.main-image {
-    width: 100%;
-    height: 100%;
+  .characters {
+    border-right: 50px;
+    border-color: white;
   }
 
   header {
@@ -35,11 +34,43 @@
     box-shadow: 0 2px 0px -1px rgb(0, 0, 2.5);
   }
 
+  .father {
+    background-image: url("marikaboi.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.Title {
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    transition: transform .2s;
+  }
+
+  img.Title:hover {
+    transform: scale(1.1);
+  }
+
+  .Site-info {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .menu-item-active {
+    max-width: fit-content;
+    padding-bottom: 6px;
+    background-image: url("elden-ring-border-leaf.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
   img { 
     width: 200px;
     margin-top: 0;
     margin-bottom: 0; 
-    
     }
 
   img:hover {
@@ -70,14 +101,28 @@
     display: flex;
   }
 
+  nav {
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 16px;
+  }
+
+  @media (min-width: 998px) {
+    nav {
+      font-size: 20px;
+    }
+  }
+
   nav a {
-    color:  white;
+    color: white;
     display: block;
     text-align: center;
     position: relative;
     text-decoration: none;
     float: left;
     text-align: center;
+    padding: 8px 16px;
   }
   
   nav a:hover {
@@ -86,6 +131,7 @@
 
   .menu-item {
     padding-right: 6px;
+    padding-left: 6px;
   }
 
   main {
@@ -95,11 +141,15 @@
   }
 
   /* Style the sections */
-  section {
+  div {
     margin-bottom: 40px;
     color: rgb(252, 249, 249);
   }
   
+  .overview {
+    color: #fcf8f8;
+  }
+
   h2 {
     margin-bottom: 20px;
   }
