@@ -17,7 +17,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 100%;  
   }
 
 
@@ -156,11 +156,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    transition: transform .2s;
+    font-size: 14px;
+    transition: font-size 0.3s ease-in-out;
   }
 
   .overview:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .characters {
@@ -171,11 +172,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    transition: transform .2s;
+    font-size: 14px;
+    transition: font-size 0.3s ease-in-out;
   }
 
   .characters:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .world {
@@ -186,11 +188,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px; 
-    transition: transform .2s;
+    font-size: 14px;
+    transition:font-size 0.3s ease-in-out;
   }
 
   .world:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .gameplay{
@@ -201,11 +204,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    transition: transform .2s;
+    font-size: 14px;
+    transition:font-size 0.3s ease-in-out;
   }
 
   .gameplay:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .Key-features{
@@ -216,11 +220,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    transition: transform .2s;
+    font-size: 14px;
+    transition:font-size 0.3s ease-in-out;
   }
 
   .Key-features:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .About-us {
@@ -231,11 +236,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    transition: transform .2s; 
+    font-size: 14px;
+    transition:font-size 0.3s ease-in-out;
   }
 
   .About-us:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .Other-products {
@@ -246,11 +252,12 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    transition: transform .2s;     
+    font-size: 14px;
+    transition:font-size 0.3s ease-in-out;    
   }
 
   .Other-products:hover {
-    transform: scale(1.05);
+    font-size:18px;
   }
 
   .Site-info {
@@ -263,10 +270,10 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 14px;
     float:left;
-    transition: transform .2s;
-    overflow: scroll;
+    transition: font-size 0.3s ease-in-out;
+    overflow:scroll;
   }
 
   .Site-info p {
@@ -275,7 +282,7 @@
   }
 
   .Site-info:hover {
-    transform:scale(1.05);
+    font-size:18px;
   }
 
   h2 {
