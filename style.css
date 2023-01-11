@@ -20,10 +20,6 @@
     width: auto;
   }
 
-  .characters {
-    border-right: 50px;
-    border-color: white;
-  }
 
   header {
     display: flex;
@@ -47,6 +43,7 @@
     height: 30px;
     margin: auto;
     transition: transform .2s;
+    padding-right: 24px;
   }
 
   img.Title:hover {
@@ -64,7 +61,7 @@
     background-image: url("elden-ring-border-leaf.png");
     background-size: 150px;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: bottom center;
   }
 
   img { 
@@ -124,7 +121,7 @@
     text-align: center;
     padding: 8px 16px;
   }
-  
+
   nav a:hover {
     color: darkgoldenrod;
   }
@@ -140,6 +137,10 @@
     padding: 20px;
   }
 
+  ul {
+    list-style-type: none;
+  }
+
   /* Style the sections */
   div {
     margin-bottom: 40px;
@@ -147,7 +148,88 @@
   }
   
   .overview {
-    color: #fcf8f8;
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform .2s;
+  }
+
+  .overview:hover {
+    transform: scale(1.05);
+  }
+
+  .characters {
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform .2s;
+  }
+
+  .characters:hover {
+    transform: scale(1.05);
+  }
+
+  .world {
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px; 
+    transition: transform .2s;
+  }
+
+  .world:hover {
+    transform: scale(1.05);
+  }
+
+  .gameplay{
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform .2s;
+  }
+
+  .gameplay:hover {
+    transform: scale(1.05);
+  }
+
+  .Key-features{
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform .2s;
+  }
+
+  .Key-features:hover {
+    transform: scale(1.05);
+  }
+
+  .Site-info {
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
   }
 
   h2 {
@@ -180,7 +262,6 @@
     display: flex;
     padding-top: 5px;
     padding-bottom: 5px;
-    overflow: hidden;
   }
   
   /* Responsive styles */
