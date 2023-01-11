@@ -17,7 +17,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
+    width: 100%;
   }
 
 
@@ -31,11 +31,12 @@
   }
 
   .father {
-    background-image: url("marikaboi.png");
+    background-image: url("bg-image.png");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
   }
 
   img.Title {
@@ -222,7 +223,7 @@
     transform: scale(1.05);
   }
 
-  .Site-info {
+  .About-us {
     border: 50%;
     border-color: black;
     border-width: 4px;
@@ -230,6 +231,51 @@
     background-color: black;
     padding: 20px;
     border-radius: 6px;
+    transition: transform .2s; 
+  }
+
+  .About-us:hover {
+    transform: scale(1.05);
+  }
+
+  .Other-products {
+    border: 50%;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform .2s;     
+  }
+
+  .Other-products:hover {
+    transform: scale(1.05);
+  }
+
+  .Site-info {
+    width: 30%;
+    border: 25%;
+    height: 150px;
+    border-color: white;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    float:left;
+    transition: transform .2s;
+    overflow: scroll;
+  }
+
+  .Site-info p {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .Site-info:hover {
+    transform:scale(1.05);
   }
 
   h2 {
