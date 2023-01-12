@@ -43,10 +43,6 @@
     margin-bottom: 0;
   }
 
-  .son {
-    pass:;
-  }
-
   img.Title {
     width: 200px;
     height: 30px;
@@ -195,6 +191,12 @@
     border-radius: 6px;
     font-size: 14px;
     transition: font-size 0.3s ease-in-out;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;
   }
 
   .characters:hover {
@@ -211,6 +213,12 @@
     border-radius: 6px; 
     font-size: 14px;
     transition:font-size 0.3s ease-in-out;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;
   }
 
   .world:hover {
@@ -227,6 +235,12 @@
     border-radius: 6px;
     font-size: 14px;
     transition:font-size 0.3s ease-in-out;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;
   }
 
   .gameplay:hover {
@@ -243,6 +257,12 @@
     border-radius: 6px;
     font-size: 14px;
     transition:font-size 0.3s ease-in-out;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;
   }
 
   .Key-features:hover {
@@ -259,6 +279,12 @@
     border-radius: 6px;
     font-size: 14px;
     transition:font-size 0.3s ease-in-out;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;
   }
 
   .About-us:hover {
@@ -274,7 +300,13 @@
     padding: 20px;
     border-radius: 6px;
     font-size: 14px;
-    transition:font-size 0.3s ease-in-out;    
+    transition:font-size 0.3s ease-in-out;  
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;  
   }
 
   .Other-products:hover {
