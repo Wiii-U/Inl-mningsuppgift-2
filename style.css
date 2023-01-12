@@ -18,6 +18,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;  
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: -1;
   }
 
 
@@ -31,12 +35,16 @@
   }
 
   .father {
-    background-image: url("bg-image.png");
+    background-image:url("bg-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+  }
+
+  .son {
+    pass:;
   }
 
   img.Title {
@@ -58,7 +66,7 @@
 
   .menu-item-active {
     max-width: fit-content;
-    padding-bottom: 6px;
+    padding-bottom: 1%;
     background-image: url("elden-ring-border-leaf.png");
     background-size: 150px;
     background-repeat: no-repeat;
@@ -158,6 +166,19 @@
     border-radius: 6px;
     font-size: 14px;
     transition: font-size 0.3s ease-in-out;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-position:bottom center, top center;
+    background-repeat: no-repeat;
+    background-size: 750px;
+    padding-bottom: 44px;
+    padding-top: 44px;
+  }
+
+  .overview h2 {
+    background-image: url("");
+    background-size: cover;
+    padding-top: 1%;
+    background-repeat: no-repeat
   }
 
   .overview:hover {
@@ -260,28 +281,43 @@
     font-size:18px;
   }
 
-  .Site-info {
+  .Credits {
     width: 30%;
-    border: 25%;
-    height: 150px;
-    border-color: white;
-    border-width: 4px;
+    border: 5%;
+    border-left-color: black;
+    border-bottom-color: black;;
+    border-right-color: black;
+    border-top-color: black;
+    height: 100%;
+    border-width: 2px;
     border-style: solid;
     background-color: black;
-    padding: 20px;
-    border-radius: 6px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 2px;
     font-size: 14px;
     float:left;
     transition: font-size 0.3s ease-in-out;
-    overflow:scroll;
+    text-align: center;
+    margin:50px 0;
+    margin-left: 0;
+    padding-left: 0;
+    overflow:-moz-hidden-unscrollable;
+    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: bottom center, top center;
   }
 
-  .Site-info p {
-    height: fit-content;
-    width: fit-content;
+  .Credits h2 {
+  margin-bottom: 20px;
   }
 
-  .Site-info:hover {
+  .Credits ul {
+    list-style-type: none;
+  }
+
+  .Credits:hover {
     font-size:18px;
   }
 
@@ -302,10 +338,15 @@
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 20px;
+    transition: transform .2s;
+  }
+
+  .screenshot-container img:hover {
+    transform: scale(1.05);
   }
   
   /* Style the trailer video */
-  video {
+  iframe {
     width: 100%;
     height: auto;
     border-radius: 5px;
