@@ -11,26 +11,41 @@
     font-family: Arial, sans-serif;
     line-height: 1.5;
     background-color: black;
+    -webkit-font-smoothing:antialiased;
   }
   
-  img.top-bg-image {
+  img.top-bg-image1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;  
+    height: 100%;
     position: sticky;
     position: -webkit-sticky;
     top:0;
     z-index: -1;
+    background-image: url("elden-ring-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
+  img.top-bg-image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;  
+    height: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: -1;
+  }
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #000000;
-    padding: 16px;
     box-shadow: 0 2px 0px -1px rgb(0, 0, 2.5);
   }
 
@@ -40,15 +55,15 @@
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
   }
 
   img.Title {
     width: 200px;
     height: 30px;
-    margin: auto;
+    margin: 0;
     transition: transform .2s;
-    padding-right: 24px;
+    padding:0 8px;
+    text-decoration: none;
   }
 
   img.Title:hover {
@@ -61,12 +76,11 @@
   }
 
   .menu-item-active {
-    max-width: fit-content;
-    padding-bottom: 1%;
     background-image: url("elden-ring-border-leaf.png");
     background-size: 150px;
     background-repeat: no-repeat;
     background-position: bottom center;
+    padding: 0 8px 2px;
   }
 
   img { 
@@ -76,7 +90,7 @@
     }
 
   img:hover {
-  cursor: default;
+  cursor: pointer;
   }
   
   h1 {
@@ -91,28 +105,82 @@
   }
   nav ul {
     list-style: none;
-    display: flex;
+    display: inline-block;
   }
   
   nav li {
-    margin-right: 20px;
+    padding: 0 8px;
+    float:left;
   }
-  
+
+  @media screen and (max-width:600px) {
+    li {
+      display: list-item;
+      text-align: left;
+      float: none;
+    }
+  }
+
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .nav a {
+      float: none;
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .nav li {
+      padding: 0 0.5em;
+    }
+  }
   .menu {
     list-style: none;
     display: flex;
-  }
-
-  nav {
     justify-content: center;
-    list-style-type: none;
     margin: 0;
-    padding: 8px 16px;
+    text-size-adjust: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    align-items: center;
+    padding: 0;
   }
 
-  @media (min-width: 998px) {
+  ul {
+    padding:0;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-left: 1.5em;
+    list-style-type: none;
+  }
+
+  @media screen and (min-width:992px) { 
+    .menu {
+      align-items:center;
+    }
+  }
+  nav {
+    list-style-type: none;
+    margin:0;
+    padding: 8px 16px;
+    position: fixed;
+    display: block;
+    box-sizing: border-box;
+    background-color:#c19d53 ;
+    width: 100%; 
+    top: 0;
+    left:0;
+    z-index: 10;
+    line-height: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  @media (min-width: 992px) {
     nav {
       font-size: 20px;
+      padding: 8px 16px;
+      background-color: #000000;
     }
   }
 
@@ -122,9 +190,8 @@
     text-align: center;
     position: relative;
     text-decoration: none;
-    float: left;
     text-align: center;
-    padding: 8px 16px;
+    padding: 0.8em 0.5em;
   }
 
   nav a:hover {
@@ -132,18 +199,13 @@
   }
 
   .menu-item {
-    padding-right: 6px;
-    padding-left: 6px;
+    padding:0 8px;
   }
 
   main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
-
-  ul {
-    list-style-type: none;
   }
 
   /* Style the sections */
@@ -225,7 +287,7 @@
     font-size:18px;
   }
 
-  .gameplay{
+  .Media{
     border: 50%;
     border-color: black;
     border-width: 4px;
@@ -243,7 +305,7 @@
     padding-top: 44px;
   }
 
-  .gameplay:hover {
+  .Media:hover {
     font-size:18px;
   }
 
@@ -374,7 +436,7 @@
   }
 
   .screenshot-container img:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
   }
   
   /* Style the trailer video */
@@ -384,12 +446,6 @@
     border-radius: 5px;
   }
 
-  nav {
-    display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
   /* Responsive styles */
   @media (max-width: 600px) {
     nav {
