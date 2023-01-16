@@ -19,26 +19,25 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;  
-    height: 100%;
+    height:100%;
     position: sticky;
     position: -webkit-sticky;
     top:0;
     z-index: -1;
-    background-image: url("elden-ring-logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 
-  img.top-bg-image2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;  
-    height: auto;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: -1;
+  .space-after-bg-images {
+    background-color:black;
+    height: 44px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width:600px){
+    .space-after-bg-images {
+      height: 70px;
+    }
   }
 
   header {
@@ -90,7 +89,7 @@
     }
 
   img:hover {
-  cursor: pointer;
+  cursor: default;
   }
   
   h1 {
@@ -442,7 +441,7 @@
   /* Style the trailer video */
   iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 5px;
   }
 
