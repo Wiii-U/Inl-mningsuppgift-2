@@ -23,8 +23,41 @@
     position: sticky;
     position: -webkit-sticky;
     top:0;
+  }
+
+  .first-container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
     z-index: -1;
   }
+
+   .first-container .purch-option {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 24px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+   }
+
+   .first-container .purch-option:hover {
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color: black;
+   }
+
+   .first-container img {
+    width: 100%;
+    height: auto;
+   }
 
   .space-after-bg-images {
     background-color:black;
@@ -42,10 +75,10 @@
 
   header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background-color: #000000;
     box-shadow: 0 2px 0px -1px rgb(0, 0, 2.5);
+    z-index: 5;
   }
 
   .father {
@@ -56,12 +89,19 @@
     margin-right: auto;
   }
 
+  .father2 {
+    background-image:url("godfrey_artworkHD-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   img.Title {
-    width: 200px;
-    height: 30px;
+    width: 230px;
+    height: 36px;
     margin: 0;
     transition: transform .2s;
-    padding:0 8px;
     text-decoration: none;
   }
 
@@ -76,10 +116,10 @@
 
   .menu-item-active {
     background-image: url("elden-ring-border-leaf.png");
-    background-size: 150px;
+    background-size: 200px;
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding: 0 8px 2px;
+    padding: 0 8px 12px;
   }
 
   img { 
@@ -102,14 +142,11 @@
     color: #fcf8f8;
     text-decoration: wavy;
   }
-  nav ul {
-    list-style: none;
-    display: inline-block;
-  }
+
   
   nav li {
     padding: 0 8px;
-    float:left;
+    display: inline-block;
   }
 
   @media screen and (max-width:600px) {
@@ -133,16 +170,15 @@
       padding: 0 0.5em;
     }
   }
-  .menu {
+  ul.menu {
     list-style: none;
-    display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     text-size-adjust: 100%;
     font-weight: 300;
-    font-size: 16px;
-    align-items: center;
     padding: 0;
+    width: 100%;
+    display: flex;
   }
 
   ul {
@@ -151,6 +187,7 @@
     margin-top: 0;
     padding-left: 1.5em;
     list-style-type: none;
+    text-align: center;
   }
 
   @media screen and (min-width:992px) { 
@@ -163,21 +200,20 @@
     margin:0;
     padding: 8px 16px;
     position: fixed;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     background-color:#c19d53 ;
     width: 100%; 
     top: 0;
     left:0;
-    z-index: 10;
     line-height: 20px;
-    text-align: center;
     height: auto;
+    text-align: center;
   }
 
   @media (min-width: 992px) {
     nav {
-      font-size: 20px;
+      font-size: 24px;
       padding: 8px 16px;
       background-color: #000000;
     }
@@ -190,7 +226,7 @@
     position: relative;
     text-decoration: none;
     text-align: center;
-    padding: 0.8em 0.5em;
+    padding: 8px 16px;
   }
 
   nav a:hover {
@@ -198,7 +234,7 @@
   }
 
   .menu-item {
-    padding:0 8px;
+    padding:0 8px 12px;
   }
 
   main {
@@ -374,9 +410,32 @@
     font-size:18px;
   }
 
+  .footer-menu {
+    list-style-type: none;
+    margin:0;
+    padding: 8px 16px;
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    background-color:#c19d53 ;
+    width: 100%; 
+    right: 0;
+    line-height: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .footer-menu ul {
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    float: left;
+    text-align: right;
+  }
+
   .Credits {
-    width: 30%;
-    border: 5%;
+    width: 100%;
+    border: 100%;
     border-left-color: black;
     border-bottom-color: black;;
     border-right-color: black;
@@ -392,26 +451,55 @@
     float:left;
     transition: font-size 0.3s ease-in-out;
     text-align: center;
-    margin:50px 0;
-    margin-left: 0;
     padding-left: 0;
-    overflow:-moz-hidden-unscrollable;
-    background-image: url("elden-ring-border-leaf.png"),url("elden-ring-border-leaf.png");
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: bottom center, top center;
+    margin-bottom: auto;
+    margin-top: auto;
   }
 
-  .Credits h2 {
-  margin-bottom: 20px;
+  footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #000000;
+      color: #fcf8f8;
+      padding: 1em;
   }
 
-  .Credits ul {
-    list-style-type: none;
+  footer .copyright {
+      flex: 1;
+      text-align: center;
   }
 
-  .Credits:hover {
-    font-size:18px;
+  footer .copyright ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  footer .social-links {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+
+  footer .social-links a {
+      color: #fcf8f8;
+      text-decoration: none;
+      margin-left: 1em;
+      transition: all 0.3s;
+      background-color: #c19d53;
+  }
+
+  footer .social-links a:hover {
+      color: goldenrod;
+      background-color: #000000;
+      transform: scale(1.2);
   }
 
   h2 {
