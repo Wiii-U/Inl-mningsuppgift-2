@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cormorant Garamond', serif;
+    z-index: 1;
   }
   
   /* Set up basic layout and styles */
@@ -23,6 +24,7 @@
     position: sticky;
     position: -webkit-sticky;
     top:0;
+    z-index: -1;
   }
 
   .first-container {
@@ -30,11 +32,11 @@
     position: -webkit-sticky;
     top: 0;
     width: 100%;
-    z-index: -1;
     margin-bottom: 0;
+    z-index: -1;
   }
 
-   .first-container .purch-option {
+   .buy-button {
     position: absolute;
     top: 65%;
     left: 50%;
@@ -47,17 +49,27 @@
     border: none;
     cursor: pointer;
     border-radius: 2px;
+    z-index: 0;
    }
 
-   .first-container .purch-option:hover {
+   .first-container a .buy-button:hover {
     background-color: goldenrod;
     border-color: goldenrod;
     color: black;
    }
 
+   @media (max-width:992px) {
+    .first-container .buy-button {
+      font-size: 16px;
+      padding: 4px 8px;
+      border-radius: 2px;
+    }
+   }
+
    .first-container img {
     width: 100%;
     height: auto;
+    z-index: -1;
    }
 
   .space-after-bg-images {
@@ -79,7 +91,6 @@
     justify-content: space-between;
     background-color: #000000;
     box-shadow: 0 2px 0px -1px rgb(0, 0, 2.5);
-    z-index: 5;
   }
 
   .father {
@@ -429,6 +440,7 @@
       margin-bottom: 0;
       flex-direction: column;
       justify-content: center;
+      padding: 0;
   }
 
   .footer-navbar {
@@ -482,6 +494,10 @@
     align-items: center;
   }
 
+  .footer-nav-external {
+    margin-bottom: 0;
+  }
+
   footer .copyright {
     flex: 1;
     text-align: center;
@@ -490,7 +506,7 @@
     padding-top: 24px;
     padding-bottom: 24px;
     width: 100%;
-    max-height: 44px;
+    max-height: 70px;
     height: 100%;
     align-content: center;
     justify-content: center;
@@ -499,6 +515,7 @@
     flex-direction: row;
     float: none;
     background-color: red;
+    margin: 0;
   }
 
   footer .copyright p {
@@ -522,6 +539,25 @@
     padding: 35px;
     font-size: 16px;
     align-items: center;
+  }
+
+  @media (max-width:992px){
+    .social-links {
+      background-color: #000000;
+    }
+    .footer-actions-nav {
+      background-color: #000000;
+    }
+    .footer-navbar {
+      background-color: #000000;
+    }
+    footer .copyright {
+      align-items: stretch;
+      flex-direction: column;
+    }
+    footer .social-links {
+      flex-direction: column;
+    }
   }
 
   .footer-image {
