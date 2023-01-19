@@ -47,6 +47,7 @@
     width: 100%;
     margin-bottom: 0;
     z-index: -1;
+    display: flex;
   }
   .space-after-bg-images {
     background-color:black;
@@ -54,6 +55,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
   }
 
   @media screen and (max-width:600px){
@@ -67,6 +69,10 @@
     justify-content: space-between;
     background-color: #000000;
     box-shadow: 0 2px 0px -1px rgb(0, 0, 2.5);
+    margin: 20px;
+    height: auto;
+    width: auto;
+    z-index: 10;
   }
 
   .father {
@@ -76,6 +82,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    display: flex;
   }
 
   .father2 {
@@ -86,6 +93,7 @@
     margin-right: auto;
     margin-bottom: 0;
     margin-top: 40px;
+    display: flex;
   }
 
   img.Title {
@@ -202,13 +210,19 @@
     line-height: 20px;
     height: auto;
     text-align: center;
+    font-size: 24px;
+    z-index: 10;
   }
 
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     nav {
-      font-size: 24px;
-      padding: 8px 16px;
-      background-color: #000000;
+      font-size: 16px;
+      padding: 4px 8px;
+      flex-direction: column;
+      display: flex;
+    }
+    nav a {
+      padding: 4px 8px;
     }
   }
 
@@ -226,8 +240,31 @@
     color: darkgoldenrod;
   }
 
+  @media (max-width:992px) {
+    nav a {
+      padding: 4px 8px;
+    }
+  }
+
   .menu-item {
     padding:0 8px 12px;
+  }
+
+  @media (max-width:992px) {
+    .menu-item {
+      padding:  0 4px 8px;
+    }
+    .menu-item-active {
+      padding: 0 4px 8px;
+    }
+    ul.menu {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: stretch;
+      justify-content: center;
+    }
   }
 
   main {
@@ -760,7 +797,7 @@
   /* Responsive styles */
   @media (max-width: 600px) {
     nav {
-      display: none;
+      display: flex;
     }
     h1 {
       font-size: 1.5em;
